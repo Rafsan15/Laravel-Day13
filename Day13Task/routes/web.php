@@ -14,4 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/User/home','UserController@Home');
+Route::get('/user/home','UserController@Home')->name('user.home');
+Route::get('/user/register','UserController@UserRegister')->name('user.register');
+Route::get('/user/login','UserController@UserLogin')->name('user.login');
+Route::get('/user/about','UserController@AboutUs')->name('user.about');
+Route::get('/user/contactUs','UserController@ContactUs')->name('user.contactUs');
